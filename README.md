@@ -1,6 +1,6 @@
 # FaceRecognitionSystemService
 
-FaceRecognitionSystem 人脸识别系统的配套服务器 https://github.com/z695101385/FaceRecognitionSystem
+FaceRecognitionSystem 人脸识别系统https://github.com/z695101385/FaceRecognitionSystem的配套服务器 
 
 项目包括
 
