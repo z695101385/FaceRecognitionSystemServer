@@ -6,7 +6,7 @@ FaceRecognitionSystem 人脸识别系统的配套服务器 https://github.com/z6
 
 1、基于OpenCV 2.4.13的特征训练模块
 
-2、人脸识别系统客户端的服务器端
+2、基于CocoaAsyncSocket的人脸识别系统客户端的服务器端
 
 实现功能
 
