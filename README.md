@@ -36,4 +36,4 @@ opencv官网http://opencv.org
 
 注意！！！！本项目使用的是基于mac／Linux的OpenCV，并非客户端使用的基于iOS的OpenCV
 
-安装方法自己百度，实在不会加我QQ695101385
+安装方法自己百度，使用Homebrew安装，实在不会加我QQ695101385
