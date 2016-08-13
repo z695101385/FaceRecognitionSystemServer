@@ -60,6 +60,7 @@ static id _instace;
     feature = [feature substringWithRange:NSMakeRange(method.length + 1, feature.length - method.length - 1)];
     
     CGFloat E = MAXFLOAT;
+    
     NSString *ID = nil;
     
     for (ZCPerson *p in personsArr) {

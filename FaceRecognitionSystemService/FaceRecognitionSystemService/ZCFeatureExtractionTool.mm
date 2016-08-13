@@ -158,6 +158,11 @@ static id _instace;
 {
     NSMutableString *fea = [NSMutableString stringWithString:@"FEA_MLBP"];
     
+    int hist[256];
+    
+    for (int i = 0; i < 256; i++) {
+        hist[i] = 0;
+    }
     
     for(int j = 1; j < _IplImage->width - 1; j++)
     {
@@ -180,10 +185,17 @@ static id _instace;
                 temp += (neighborhood[k] >= center)<<k;
             }
             
-            [fea appendFormat:@"_%d",temp];
+            if (i >= 16 && i<= 63 && j >= 16 && j <= 47) {
+                [fea appendFormat:@"_%d",temp];
+            } else {
+                hist[temp] += 1;
+            }
         }
     }
     
+    for (int i = 0; i < 256; i++) {
+        [fea appendFormat:@"_%d",hist[i]];
+    }
     return [fea copy];
 }
 

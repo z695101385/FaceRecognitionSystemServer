@@ -13,7 +13,7 @@
 @implementation ZCSaveTool
 
 static id _instace;
-static NSString * const path = @"/Users/zhangchen/Desktop/c++/ZCServer/ZCServer/database.plist";
+static NSString * const path = @"/Users/zhangchen/Documents/GitHub/FaceRecognitionSystemService/FaceRecognitionSystemService/FaceRecognitionSystemService/database.plist";
 
 + (instancetype)allocWithZone:(struct _NSZone *)zone
 {

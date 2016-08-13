@@ -19,7 +19,7 @@ int main(int argc, const char * argv[]) {
         [listener start];
         
         //若需要训练图像，输入训练图像所在文件夹，并按要求命名图像：ID-序号.扩展名 eg:张三-01.png
-        //        [[ZCFeatureExtractionTool sharedInstance] trainImageUseMethod:ZCFeatureExtractMethodLBP floder:@"/Users/zhangchen/Desktop/train"];
+        //[[ZCFeatureExtractionTool sharedInstance] trainImageUseMethod:ZCFeatureExtractMethodMLBP floder:@"/Users/zhangchen/Desktop/ar20"];
         
         //开启运行循环
         [[NSRunLoop mainRunLoop] run];
