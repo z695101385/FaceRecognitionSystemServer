@@ -9,11 +9,12 @@
 #import "ZCSaveTool.h"
 #import "ZCPerson.h"
 #import "ZCPersons.h"
+#import "ZCConst.h"
 
 @implementation ZCSaveTool
 
 static id _instace;
-static NSString * const path = @"/Users/zhangchen/Documents/GitHub/FaceRecognitionSystemService/FaceRecognitionSystemService/FaceRecognitionSystemService/database.plist";
+
 
 + (instancetype)allocWithZone:(struct _NSZone *)zone
 {
@@ -50,14 +51,14 @@ static NSString * const path = @"/Users/zhangchen/Documents/GitHub/FaceRecogniti
         [dataArr addObject:dict];
     }
     
-    [dataArr writeToFile:path atomically:YES];
+    [dataArr writeToFile:ZCDataPath atomically:YES];
 }
 
 - (NSMutableArray *)loadPersons
 {
     NSMutableArray *persons = [NSMutableArray array];
     
-    NSArray *arr = [NSArray arrayWithContentsOfFile:path];
+    NSArray *arr = [NSArray arrayWithContentsOfFile:ZCDataPath];
     
     for (NSDictionary *dict in arr) {
         

@@ -70,6 +70,7 @@
 		F7AA10021D5CBB000059FD30 /* ZCPersons.m in Sources */ = {isa = PBXBuildFile; fileRef = F7AA0FC21D5CBB000059FD30 /* ZCPersons.m */; };
 		F7AA10031D5CBB000059FD30 /* ZCSaveTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F7AA0FC41D5CBB000059FD30 /* ZCSaveTool.m */; };
 		F7AA10041D5CBB000059FD30 /* ZCServiceListener.m in Sources */ = {isa = PBXBuildFile; fileRef = F7AA0FC61D5CBB000059FD30 /* ZCServiceListener.m */; };
+		F7E37C661D618F9800F8FAF8 /* ZCConst.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E37C651D618F9800F8FAF8 /* ZCConst.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -158,6 +159,8 @@
 		F7AA0FC51D5CBB000059FD30 /* ZCServiceListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCServiceListener.h; sourceTree = "<group>"; };
 		F7AA0FC61D5CBB000059FD30 /* ZCServiceListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCServiceListener.m; sourceTree = "<group>"; };
 		F7E37C631D61838E00F8FAF8 /* map.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = map.plist; sourceTree = "<group>"; };
+		F7E37C641D618F9800F8FAF8 /* ZCConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCConst.h; sourceTree = "<group>"; };
+		F7E37C651D618F9800F8FAF8 /* ZCConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCConst.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,6 +263,8 @@
 				F7AA0FC41D5CBB000059FD30 /* ZCSaveTool.m */,
 				F7AA0FC51D5CBB000059FD30 /* ZCServiceListener.h */,
 				F7AA0FC61D5CBB000059FD30 /* ZCServiceListener.m */,
+				F7E37C641D618F9800F8FAF8 /* ZCConst.h */,
+				F7E37C651D618F9800F8FAF8 /* ZCConst.m */,
 				F7AA0F7F1D5CBB000059FD30 /* database.plist */,
 				F7E37C631D61838E00F8FAF8 /* map.plist */,
 			);
@@ -398,6 +403,7 @@
 				F7AA0FFE1D5CBB000059FD30 /* GCDAsyncSocket.m in Sources */,
 				F7AA0FFF1D5CBB000059FD30 /* ZCClassifier.m in Sources */,
 				F7AA10041D5CBB000059FD30 /* ZCServiceListener.m in Sources */,
+				F7E37C661D618F9800F8FAF8 /* ZCConst.m in Sources */,
 				F7AA10031D5CBB000059FD30 /* ZCSaveTool.m in Sources */,
 				F7AA10001D5CBB000059FD30 /* ZCFeatureExtractionTool.mm in Sources */,
 				F7AA0F791D5CBAEA0059FD30 /* main.m in Sources */,

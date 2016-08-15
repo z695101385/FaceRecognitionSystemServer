@@ -10,6 +10,7 @@
 #import "GCDAsyncSocket.h"
 #import "ZCClassifier.h"
 #import "ZCPersons.h"
+#import "ZCConst.h"
 
 @interface ZCServiceListener ()<GCDAsyncSocketDelegate>
 /** 服务器socket */
@@ -23,8 +24,6 @@
 
 @implementation ZCServiceListener
 
-static NSString * const mapPath = @"/Users/zhangchen/Documents/GitHub/FaceRecognitionSystemService/FaceRecognitionSystemService/FaceRecognitionSystemService/map.plist";
-
 - (NSMutableArray *)clientSockets
 {
     if (!_clientSockets) {
@@ -36,7 +35,7 @@ static NSString * const mapPath = @"/Users/zhangchen/Documents/GitHub/FaceRecogn
 - (NSDictionary *)map
 {
     if (!_map) {
-        _map = [NSDictionary dictionaryWithContentsOfFile:mapPath];
+        _map = [NSDictionary dictionaryWithContentsOfFile:ZCMapPath];
     }
     return _map;
 }
@@ -150,13 +149,13 @@ static NSString * const mapPath = @"/Users/zhangchen/Documents/GitHub/FaceRecogn
 
 - (NSString *)classFeature:(NSString *)str
 {
-    NSInteger length = str.length;
-    
-    if (length < 4) return @"特征格式不正确！";
-    
-    NSString *feature = [str substringWithRange:NSMakeRange(4, str.length - 4)];
-    
-    if ([[ZCClassifier sharedInstance] featureIsCorrectFormat:feature]) {
+    if ([[ZCClassifier sharedInstance] featureIsCorrectFormat:str]) {
+        
+        NSInteger length = str.length;
+        
+        if (length < 4) return @"特征格式不正确！";
+        
+        NSString *feature = [str substringWithRange:NSMakeRange(4, str.length - 4)];
         
         NSString *ID = [[ZCClassifier sharedInstance] classFeature:feature classifierType:ZCClassifierTypeNearestNeighbor];
         
