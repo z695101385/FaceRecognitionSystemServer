@@ -157,6 +157,7 @@
 		F7AA0FC41D5CBB000059FD30 /* ZCSaveTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCSaveTool.m; sourceTree = "<group>"; };
 		F7AA0FC51D5CBB000059FD30 /* ZCServiceListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCServiceListener.h; sourceTree = "<group>"; };
 		F7AA0FC61D5CBB000059FD30 /* ZCServiceListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCServiceListener.m; sourceTree = "<group>"; };
+		F7E37C631D61838E00F8FAF8 /* map.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = map.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,6 +261,7 @@
 				F7AA0FC51D5CBB000059FD30 /* ZCServiceListener.h */,
 				F7AA0FC61D5CBB000059FD30 /* ZCServiceListener.m */,
 				F7AA0F7F1D5CBB000059FD30 /* database.plist */,
+				F7E37C631D61838E00F8FAF8 /* map.plist */,
 			);
 			path = FaceRecognitionSystemService;
 			sourceTree = "<group>";
@@ -541,6 +543,7 @@
 				F7AA0F7E1D5CBAEA0059FD30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
