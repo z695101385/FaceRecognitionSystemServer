@@ -48,7 +48,7 @@
     
     //开启监听
     NSError *error;
-    [serverSocket acceptOnPort:2333 error:&error];
+    [serverSocket acceptOnPort:port error:&error];
     
 }
 

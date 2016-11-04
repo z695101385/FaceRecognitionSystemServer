@@ -14,5 +14,7 @@
 FOUNDATION_EXPORT NSString * const ZCDataPath;
 /** 映射列表地址 */
 FOUNDATION_EXPORT NSString * const ZCMapPath;
+/** port */
+FOUNDATION_EXTERN uint16_t const port;
 
 @end
