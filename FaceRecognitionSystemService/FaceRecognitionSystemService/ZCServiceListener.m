@@ -156,7 +156,7 @@
         if (length < 4) return @"特征格式不正确！";
         
         NSString *feature = [str substringWithRange:NSMakeRange(4, str.length - 4)];
-        
+        //在这里修改分类方法
         NSString *ID = [[ZCClassifier sharedInstance] classFeature:feature classifierType:ZCClassifierTypeNearestNeighbor];
         
         if (ID == nil) return @"特征值匹配失败，请检查上传的特征值！";
