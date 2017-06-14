@@ -1,4 +1,4 @@
-# FaceRecognitionSystemService
+# FaceRecognitionSystemServer
 
 FaceRecognitionSystem 人脸识别系统的配套服务器 https://github.com/z695101385/FaceRecognitionSystem
 
